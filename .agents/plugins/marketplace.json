@@ -1,0 +1,7 @@
+{
+  "name": "gpt-plugin-market-public",
+  "interface": {
+    "displayName": "GPT Plugin Market Public"
+  },
+  "plugins": []
+}
