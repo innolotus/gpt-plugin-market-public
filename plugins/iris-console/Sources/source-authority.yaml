@@ -1,0 +1,194 @@
+registryVersion: AU-SA-2026.10-v2
+jurisdiction: AU-SA
+
+resolutionPolicies:
+  PREFER_AUTHORITATIVE:
+    description: Prefer the current authoritative/statutory source for this FactType.
+  PREFER_FRESHEST_LICENSED:
+    description: Prefer the freshest approved market source; preserve conflict when current sources disagree materially.
+  COMBINE_MARKET_EVIDENCE:
+    description: Combine multiple approved market observations rather than selecting one as truth.
+  REQUIRE_FORMAL_DOCUMENT:
+    description: Do not infer the fact from secondary web sources when a formal document/search is materially required.
+  NO_AUTO_RESOLVE:
+    description: Preserve differing estimates/claims and expose the range/conflict.
+
+factTypes:
+  ACTIVE_LISTING:
+    preferred:
+      - rea_authorised
+      - domain
+    policy: PREFER_FRESHEST_LICENSED
+    onConflict: CONFLICTED
+
+  LISTING_STATUS:
+    preferred:
+      - rea_authorised
+      - domain
+    policy: PREFER_FRESHEST_LICENSED
+    onConflict: CONFLICTED
+
+  LISTING_GUIDE:
+    preferred:
+      - rea_authorised
+      - domain
+    policy: NO_AUTO_RESOLVE
+    onConflict: CONFLICTED
+
+  AUCTION_SCHEDULE:
+    preferred:
+      - rea_authorised
+      - domain
+    policy: PREFER_FRESHEST_LICENSED
+    onConflict: CONFLICTED
+
+  PROPERTY_IDENTITY:
+    preferred:
+      - domain
+    policy: COMBINE_MARKET_EVIDENCE
+    onConflict: UNVERIFIED
+
+  PROPERTY_PROFILE:
+    preferred:
+      - domain
+      - rea_authorised
+    policy: COMBINE_MARKET_EVIDENCE
+    onConflict: CONFLICTED
+
+  PRICE_ESTIMATE:
+    preferred:
+      - domain
+    policy: NO_AUTO_RESOLVE
+    onConflict: UNVERIFIED
+
+  RENT_ESTIMATE:
+    preferred:
+      - domain
+    policy: NO_AUTO_RESOLVE
+    onConflict: UNVERIFIED
+
+  SOLD_COMPARABLE:
+    preferred:
+      - domain
+    policy: COMBINE_MARKET_EVIDENCE
+    onConflict: CONFLICTED
+
+  SUBURB_PERFORMANCE:
+    preferred:
+      - domain
+    policy: COMBINE_MARKET_EVIDENCE
+    onConflict: UNVERIFIED
+
+  PLANNING_ZONE:
+    preferred:
+      - plansa
+    policy: PREFER_AUTHORITATIVE
+    onConflict: CONFLICTED
+
+  PLANNING_OVERLAY:
+    preferred:
+      - plansa
+    policy: PREFER_AUTHORITATIVE
+    onConflict: CONFLICTED
+
+  PLANNING_POLICY:
+    preferred:
+      - plansa
+    policy: PREFER_AUTHORITATIVE
+    onConflict: CONFLICTED
+
+  DEVELOPMENT_APPLICATION:
+    preferred:
+      - plansa
+    policy: PREFER_AUTHORITATIVE
+    onConflict: CONFLICTED
+
+  TITLE:
+    preferred:
+      - land_services_sa
+    policy: REQUIRE_FORMAL_DOCUMENT
+    onConflict: CONFLICTED
+
+  TITLE_REFERENCE:
+    preferred:
+      - land_services_sa
+    policy: REQUIRE_FORMAL_DOCUMENT
+    onConflict: CONFLICTED
+
+  STAMP_DUTY:
+    preferred:
+      - revenuesa
+    policy: PREFER_AUTHORITATIVE
+    onConflict: CONFLICTED
+
+  LAND_TAX:
+    preferred:
+      - revenuesa
+    policy: PREFER_AUTHORITATIVE
+    onConflict: CONFLICTED
+
+  FIRST_HOME_OWNER_GRANT:
+    preferred:
+      - revenuesa
+    policy: PREFER_AUTHORITATIVE
+    onConflict: CONFLICTED
+
+  FIRST_HOME_DUTY_RELIEF:
+    preferred:
+      - revenuesa
+    policy: PREFER_AUTHORITATIVE
+    onConflict: CONFLICTED
+
+  SENIORS_DOWNSIZING_DUTY_RELIEF:
+    preferred:
+      - revenuesa
+    policy: PREFER_AUTHORITATIVE
+    onConflict: CONFLICTED
+
+  HOME_BUYER_EX_GRATIA_RELIEF:
+    preferred:
+      - revenuesa
+    policy: PREFER_AUTHORITATIVE
+    onConflict: CONFLICTED
+
+  FIVE_PERCENT_DEPOSIT_SCHEME:
+    preferred:
+      - first_home_buyers_gov_au
+    policy: PREFER_AUTHORITATIVE
+    onConflict: CONFLICTED
+
+  HELP_TO_BUY:
+    preferred:
+      - first_home_buyers_gov_au
+    policy: PREFER_AUTHORITATIVE
+    onConflict: CONFLICTED
+
+  HOMESTART_PRODUCT:
+    preferred:
+      - homestart_sa
+    policy: PREFER_AUTHORITATIVE
+    onConflict: CONFLICTED
+
+  CASH_RATE_TARGET:
+    preferred:
+      - rba
+    policy: PREFER_AUTHORITATIVE
+    onConflict: CONFLICTED
+
+  DEMOGRAPHICS:
+    preferred:
+      - abs
+    policy: PREFER_AUTHORITATIVE
+    onConflict: CONFLICTED
+
+  CENSUS_DWELLING_CHARACTERISTICS:
+    preferred:
+      - abs
+    policy: PREFER_AUTHORITATIVE
+    onConflict: CONFLICTED
+
+notes:
+  - Mortgage rates are not derived directly from the RBA cash rate.
+  - Builder quotes, bank pre-approvals, inspections and agent appraisals are user/client evidence and should be classified separately.
+  - Market estimates should generally be shown as evidence/ranges rather than converted into certified valuations.
+  - A source being preferred for one FactType does not make it preferred for another.
