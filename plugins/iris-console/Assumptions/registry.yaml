@@ -1,0 +1,42 @@
+registryVersion: "AU-SA-ASSUMPTIONS-2026Q4-v3"
+jurisdiction: "AU-SA"
+maintainedBy: "lablotus/Iris-B-RE"
+updatedAt: "2026-10-10"
+
+sets:
+  - assumptionSetId: "SA_RESIDENTIAL_INCOME_2026Q4"
+    version: 1
+    file: "SA_RESIDENTIAL_INCOME_2026Q4-v1.yaml"
+    strategyType: "INCOME_INVESTMENT"
+    status: "ACTIVE"
+
+  - assumptionSetId: "SA_REPLACEMENT_DEVELOPMENT_2026Q4"
+    version: 2
+    file: "SA_REPLACEMENT_DEVELOPMENT_2026Q4-v2.yaml"
+    strategyType: "REPLACEMENT_DEVELOPMENT"
+    status: "ACTIVE"
+
+  - assumptionSetId: "SA_REPLACEMENT_DEVELOPMENT_2026Q4"
+    version: 1
+    file: "SA_REPLACEMENT_DEVELOPMENT_2026Q4-v1.yaml"
+    strategyType: "REPLACEMENT_DEVELOPMENT"
+    status: "SUPERSEDED"
+
+  - assumptionSetId: "SA_SUBDIVISION_DEVELOPMENT_2026Q4"
+    version: 2
+    file: "SA_SUBDIVISION_DEVELOPMENT_2026Q4-v2.yaml"
+    strategyType: "SUBDIVISION_DEVELOPMENT"
+    status: "ACTIVE"
+
+  - assumptionSetId: "SA_SUBDIVISION_DEVELOPMENT_2026Q4"
+    version: 1
+    file: "SA_SUBDIVISION_DEVELOPMENT_2026Q4-v1.yaml"
+    strategyType: "SUBDIVISION_DEVELOPMENT"
+    status: "SUPERSEDED"
+
+
+  - assumptionSetId: "SA_OWNER_OCCUPIER_ACQUISITION_2026Q4"
+    version: 1
+    file: "SA_OWNER_OCCUPIER_ACQUISITION_2026Q4-v1.yaml"
+    modelType: "OWNER_OCCUPIER_ACQUISITION"
+    status: "ACTIVE"

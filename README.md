@@ -1,20 +1,45 @@
 # GPT Plugin Market Public
 
-Repository-owned Codex plugin marketplace. The catalog is initialized and has no plugins yet.
+Public, repository-owned Codex plugin marketplace for InnoLotus plugins.
+
+## Add the marketplace
+
+```bash
+codex plugin marketplace add innolotus/gpt-plugin-market-public --ref main
+```
+
+From a local checkout, `codex plugin marketplace add .` registers that checkout
+instead of the Git-backed marketplace.
+
+## Available plugins
+
+### Iris Console 0.1.2
+
+Iris Console provides evidence-aware Australian property research, acquisition,
+investment and development workflows through 18 coordinated Skills.
+
+```bash
+codex plugin add iris-console@gpt-plugin-market-public
+```
+
+The base plugin contains no credentials or private client profiles. Connected
+property-data providers and `grill-me` are optional enhancements rather than
+hard dependencies.
 
 ## Repository map
 
 - `.agents/plugins/marketplace.json` is the ordered marketplace catalog.
-- `plugins/<plugin-name>/` will hold each plugin when one is added. Do not create an empty plugin as a placeholder.
+- `plugins/<name>/.codex-plugin/plugin.json` is each installable plugin manifest.
+- Plugin source paths in the catalog remain relative to the repository root.
 
-## Add a plugin
+## Add or update a plugin
 
-Use the Codex `plugin-creator` scaffold with this repository as the plugin and marketplace destination. Each plugin needs a `.codex-plugin/plugin.json` manifest. Its catalog entry must point to `./plugins/<plugin-name>` and declare installation policy, authentication policy, and category. Review those values and the plugin's code before listing it.
+Use the Codex `plugin-creator` scaffold with this repository as the plugin and
+marketplace destination. Each catalog entry must declare its relative source,
+installation policy, authentication policy and category. Keep the marketplace
+identifier `gpt-plugin-market-public`; changing it affects existing installations.
 
-Validate the manifest and catalog after each addition. The marketplace identifier must remain `gpt-plugin-market-public`; changing it affects existing installation references.
-
-## Use locally
-
-From this repository root, run `codex plugin marketplace add .` to register this marketplace in your Codex environment. Registration changes local Codex configuration and is optional for editing the catalog. Once plugins are listed, use `codex plugin list` to check discovery.
-
-Do not commit credentials, private keys, or customer data. Follow the applicable InnoLotus security and review standards for plugin changes.
+Validate the manifest, catalog and Skill metadata after every change. Plugin
+releases must be traceable to validated source and must not contain credentials,
+private keys, customer data or private profiles. Follow the applicable
+InnoLotus security and review standards before merging.

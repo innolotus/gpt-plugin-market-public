@@ -1,0 +1,115 @@
+assumptionSetId: "SA_SUBDIVISION_DEVELOPMENT_2026Q4"
+version: 2
+jurisdiction: "AU-SA"
+strategyType: "SUBDIVISION_DEVELOPMENT"
+status: "ACTIVE"
+effectiveFrom: "2026-10-10"
+maintainedAt: "2026-10-10"
+
+notes:
+  - "Supersedes v1 for new analyses; v1 remains immutable for historical reproducibility."
+  - "Demo/base modelling defaults, not planning, engineering, QS, lender or builder advice."
+  - "Dwelling count/site yield must never be defaulted from land area alone."
+
+assumptions:
+  contingencyRate:
+    value: 0.10
+    unit: "ratio_of_eligible_project_cost"
+    origin: "DEFAULT_ASSUMPTION"
+    sensitivity:
+      low: 0.075
+      high: 0.15
+
+  sellingCostRate:
+    value: 0.025
+    unit: "ratio_of_sale_value"
+    origin: "DEFAULT_ASSUMPTION"
+    sensitivity:
+      low: 0.02
+      high: 0.035
+
+  targetProjectMargin:
+    value: 0.20
+    unit: "ratio_of_total_development_cost"
+    origin: "DEFAULT_ASSUMPTION"
+    usage: "default_strategy_threshold"
+    sensitivity:
+      low: 0.15
+      high: 0.25
+
+  targetProjectIrr:
+    value: 0.15
+    unit: "annual_ratio"
+    origin: "DEFAULT_ASSUMPTION"
+    usage: "default_strategy_threshold"
+    notes:
+      - "Apply to the explicitly selected IRR basis; do not mix levered and unlevered targets."
+    sensitivity:
+      low: 0.12
+      high: 0.20
+
+  cashFlowPeriodGranularity:
+    value: "MONTHLY"
+    origin: "DEFAULT_ASSUMPTION"
+
+  proposedDwellingCount:
+    value: null
+    requiredInput: true
+    preferredSources:
+      - "PlanningAssessment"
+      - "USER_ASSUMPTION"
+
+  subdivisionAndCivilCost:
+    value: null
+    requiredInput: true
+
+  constructionCost:
+    value: null
+    requiredInput: true
+
+  financeRate:
+    value: null
+    requiredInputForLeveredModel: true
+    preferredSources:
+      - "FinancialSnapshot"
+      - "USER_ASSUMPTION"
+      - "SOURCE_DERIVED_ASSUMPTION"
+
+  interestTreatment:
+    value: null
+    requiredInputForLeveredModel: true
+    allowedValues:
+      - "PAID_CURRENTLY"
+      - "CAPITALISED"
+      - "MIXED"
+
+  debtFacilityLimit:
+    value: null
+    requiredInputForLeveredModel: true
+
+  drawdownRule:
+    value: null
+    requiredInputForLeveredModel: true
+
+  projectDurationMonths:
+    value: null
+    requiredInput: true
+
+  constructionDrawSchedule:
+    value: null
+    requiredInput: true
+    notes:
+      - "Use staged explicit scenario allocation when no real builder draw schedule exists."
+
+  salesSettlementSchedule:
+    value: null
+    requiredInput: true
+    notes:
+      - "Multi-dwelling sale proceeds may occur in different periods."
+
+  perDwellingGrv:
+    value: null
+    requiredInput: true
+    preferredSources:
+      - "MarketAssessment"
+      - "SOURCE_DERIVED_ASSUMPTION"

@@ -1,0 +1,413 @@
+{
+  "pluginName": "iris-console",
+  "pluginVersion": "0.1.2",
+  "sourceCommit": "b8b0744a513c156b6a57d7a875f66c2ac7b155c9",
+  "sourceTreeDirty": false,
+  "generatedAt": "2026-10-15T23:26:00Z",
+  "entrypoint": "Console/Skills/iris/SKILL.md",
+  "runtimeDependencies": [
+    {
+      "name": "Node.js",
+      "version": ">=20",
+      "requiredFor": "HTML report charts and answer-me-with-html"
+    },
+    {
+      "name": "answer-me-with-html",
+      "version": ">=0.5.2 <0.6.0",
+      "requiredFor": "responsive single-file HTML reports",
+      "source": "https://github.com/QingYunA/answer-me-with-html"
+    }
+  ],
+  "skills": [
+    {
+      "name": "acquisition-price-assessment",
+      "version": "0.2.0",
+      "portable": true,
+      "description": "Assess evidence-backed market value, expected acquisition range and strategy-supported maximum price for a property purchase."
+    },
+    {
+      "name": "client-profile-onboarding",
+      "version": "0.1.0",
+      "portable": true,
+      "description": "Gather and reuse the minimum client profile, financial snapshot and acquisition context needed for property analysis."
+    },
+    {
+      "name": "html-report-renderer",
+      "version": "0.5.2",
+      "portable": false,
+      "description": "Render a validated Iris CanonicalDemoReport as responsive offline HTML with Iris branding, evidence states and canonical charts."
+    },
+    {
+      "name": "income-investment",
+      "version": "0.5.0",
+      "portable": true,
+      "description": "Model an Australian residential income-investment strategy across acquisition, rent, cash flow, debt, equity and exit."
+    },
+    {
+      "name": "iris",
+      "version": "0.1.0",
+      "portable": true,
+      "description": "Start Iris Console workflows and preserve legacy /iris area, property and profile command compatibility."
+    },
+    {
+      "name": "owner-occupier-acquisition",
+      "version": "0.1.0",
+      "portable": true,
+      "description": "Model owner-occupier upfront cash, purchase assistance, funding boundaries, repayments and ownership costs."
+    },
+    {
+      "name": "planning-development-analysis",
+      "version": "0.1.0",
+      "portable": true,
+      "description": "Analyse property planning controls, development opportunities, constraints and required verification without overstating approval potential."
+    },
+    {
+      "name": "policy-impact-analysis",
+      "version": "0.1.0",
+      "portable": true,
+      "description": "Analyse how policy, regulation, rates, migration, tax or infrastructure changes affect a property or investment thesis."
+    },
+    {
+      "name": "property-development-orchestrator",
+      "version": "0.13.0",
+      "portable": true,
+      "description": "Orchestrate Iris property research, acquisition, owner-occupier and investment-development analysis through the minimum applicable Skill path."
+    },
+    {
+      "name": "property-due-diligence",
+      "version": "0.1.0",
+      "portable": true,
+      "description": "Produce a structured property due-diligence register covering material risks, evidence gaps and verification actions."
+    },
+    {
+      "name": "property-market-analysis",
+      "version": "0.3.0",
+      "portable": true,
+      "description": "Assess property comparables, rent, supply, demand and trend evidence while preserving relevance, freshness and conflicts."
+    },
+    {
+      "name": "property-monitoring",
+      "version": "0.1.0",
+      "portable": true,
+      "description": "Detect material changes in a property, listing, market, planning environment or policy context against prior observations."
+    },
+    {
+      "name": "property-research",
+      "version": "0.3.0",
+      "portable": true,
+      "description": "Resolve an Australian address or listing to the correct property scope and build a provenance-aware evidence bundle."
+    },
+    {
+      "name": "property-strategy-assessment",
+      "version": "0.2.0",
+      "portable": true,
+      "description": "Identify which income, replacement or subdivision strategies are sufficiently plausible and evidenced to model for a property."
+    },
+    {
+      "name": "purchase-assistance-assessment",
+      "version": "0.3.0",
+      "portable": true,
+      "description": "Discover and assess current Australian purchase-assistance programs that may change deposit, cash, LVR or financing outcomes."
+    },
+    {
+      "name": "replacement-development",
+      "version": "0.5.0",
+      "portable": true,
+      "description": "Model acquisition, demolition, replacement construction, finance, holding and exit for a one-for-one development strategy."
+    },
+    {
+      "name": "strategy-comparison",
+      "version": "0.3.0",
+      "portable": true,
+      "description": "Compare compatible property strategies across price, capital, time, return, risk and uncertainty without collapsing them into a misleading score."
+    },
+    {
+      "name": "subdivision-development",
+      "version": "0.5.0",
+      "portable": true,
+      "description": "Model subdivision or multi-dwelling development with timed costs, finance, sales, tax treatment and evidence constraints."
+    }
+  ],
+  "payload": [
+    {
+      "path": ".codex-plugin/plugin.json",
+      "bytes": 1277,
+      "sha256": "bd627474138104241e5a30b2a5683074c702069a74af544e7fe4e42ee4df541d"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "bytes": 11157,
+      "sha256": "e6e9324575cd881627315b1b178638136aa15077c0602e4d833a49e48ed722eb"
+    },
+    {
+      "path": "Assets/Brand/README.md",
+      "bytes": 753,
+      "sha256": "860a170f12635f3a37a8aaa60970f07a698748db87f4c499694bcce46a8c0914"
+    },
+    {
+      "path": "Assets/Brand/iris-logo-mark-master.png",
+      "bytes": 585368,
+      "sha256": "0629ba60ebe634361ebbc152ad66616bc8e25d2b8b76996274ab0cfe7d7b38ce"
+    },
+    {
+      "path": "Assets/Brand/iris-logo-mark-report.png",
+      "bytes": 24848,
+      "sha256": "d79ccb5dd70d0993b4418ecf803830ea2c3476428ea548e688773ab857ff4694"
+    },
+    {
+      "path": "Assets/Themes/README.md",
+      "bytes": 866,
+      "sha256": "90d0cd186fda712084f5d516e8dc1a7c902c5adf6a2a8b0bff518dfe8b13e04a"
+    },
+    {
+      "path": "Assets/Themes/iris-orange.json",
+      "bytes": 1360,
+      "sha256": "17094b6d71988c915a91f62cc1d93df1700aa4bbab452ad0a8381ffdca3c0606"
+    },
+    {
+      "path": "Assumptions/README.md",
+      "bytes": 4291,
+      "sha256": "2e4bbb3d0c222ce31dd4275528901ec2a9e41fa8483bcabc7390818121a96971"
+    },
+    {
+      "path": "Assumptions/SA_OWNER_OCCUPIER_ACQUISITION_2026Q4-v1.yaml",
+      "bytes": 1541,
+      "sha256": "c7bf5bdd5d985c8e9c867fac3ae038dab22f3ffc331b16eb02dfbe2514b5a95d"
+    },
+    {
+      "path": "Assumptions/SA_REPLACEMENT_DEVELOPMENT_2026Q4-v1.yaml",
+      "bytes": 2182,
+      "sha256": "99438a8a180c27df3565ea62552473eca5cc3b42828cb9609fb48920a36f61e2"
+    },
+    {
+      "path": "Assumptions/SA_REPLACEMENT_DEVELOPMENT_2026Q4-v2.yaml",
+      "bytes": 2754,
+      "sha256": "9231975b3fc9be4226cb615049eb5aaf80f62f353d6ed48bb374f3c9ce834327"
+    },
+    {
+      "path": "Assumptions/SA_RESIDENTIAL_INCOME_2026Q4-v1.yaml",
+      "bytes": 2124,
+      "sha256": "d7fbdc1b77d7378b81afae648bf96152cb84f8abdb4bdc98ab26520989be64a5"
+    },
+    {
+      "path": "Assumptions/SA_SUBDIVISION_DEVELOPMENT_2026Q4-v1.yaml",
+      "bytes": 2304,
+      "sha256": "11a3c14cac643c2ce090c4a9723d453009c2f3cc8cb917cfb9c87bb26ee86b2a"
+    },
+    {
+      "path": "Assumptions/SA_SUBDIVISION_DEVELOPMENT_2026Q4-v2.yaml",
+      "bytes": 2676,
+      "sha256": "9a46960a0c9a09bb51f43ef2170f87da433d3b4a2a240675134b1be3ddd6a207"
+    },
+    {
+      "path": "Assumptions/registry.yaml",
+      "bytes": 1285,
+      "sha256": "65c2bab64d407ebdbb53b97755967fe74666a25318c758999405bc5ce23e39eb"
+    },
+    {
+      "path": "CONSOLE.md",
+      "bytes": 12707,
+      "sha256": "24031b112e9f47b1c96a3d20c2bc4bbfa2d8abdf912247fc6ddb7bd8338da894"
+    },
+    {
+      "path": "CONTRACTS.md",
+      "bytes": 38702,
+      "sha256": "b6186c702bc7c4fabcce95e1de27a430e257d0b1ca5989c7ba0eedf8c25ccd99"
+    },
+    {
+      "path": "DevelopmentFinance/README.md",
+      "bytes": 5250,
+      "sha256": "9ea5bba3f4379758c46a9a27277cf6355f269b04495c195db62ea9cd863cd8fd"
+    },
+    {
+      "path": "Evidence/README.md",
+      "bytes": 2132,
+      "sha256": "7dccd965b6297203869fe5a4e1c97351617163a90cdf68e8262373fa126918e5"
+    },
+    {
+      "path": "OwnerOccupier/README.md",
+      "bytes": 4106,
+      "sha256": "1b4abeadf170f80261dce7cbd9577218db0b11c4c1923de25a8476be037e2e41"
+    },
+    {
+      "path": "Policies/README.md",
+      "bytes": 3744,
+      "sha256": "dd8d7ee606cc959e8304134641de16bb4a1b8763d2491d1b4685f9fb7ef964d6"
+    },
+    {
+      "path": "Policies/purchase-assistance-registry.yaml",
+      "bytes": 9910,
+      "sha256": "01c43615642d615a69c890a8e6f532a51e42eee80566222debbf60e22c298c0d"
+    },
+    {
+      "path": "Profile/README.md",
+      "bytes": 2496,
+      "sha256": "a523386b7c0ddf26cdf2e25477bc0472e8303981381d4e51d68e75dcf9f84f9c"
+    },
+    {
+      "path": "Profile/profile-template.yaml",
+      "bytes": 1806,
+      "sha256": "3cc813621ec191119921f8cef6baf900bab050434ab497cf9b315bcd738adbca"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1375,
+      "sha256": "1b7c796c79fac57a88427c76295ab9d98b341bb28dd8364dd0ee76ea3c7c8e19"
+    },
+    {
+      "path": "Reports/README.md",
+      "bytes": 5018,
+      "sha256": "4a6e0382304a88e968fd869034accef4fae59217ca26154a1ae7b5d57ed61ef4"
+    },
+    {
+      "path": "Reports/canonical-demo-report-template.yaml",
+      "bytes": 2212,
+      "sha256": "3b43f447b96b0327c7d5758a42a7c2260bb8ff4cac254d1a1d877cb62a584113"
+    },
+    {
+      "path": "Reports/html-rendering-profile.md",
+      "bytes": 12012,
+      "sha256": "c28dc463724ebeb5b3490219533f85ecbdfab4d88f0def93efc11e72dc285208"
+    },
+    {
+      "path": "SOURCE_POLICY.md",
+      "bytes": 6163,
+      "sha256": "edddfd0d011c9a7f9ab295d0c89bae4ebf9ff37b0247e28558c6b7a596ec7114"
+    },
+    {
+      "path": "STRATEGY_MODEL.md",
+      "bytes": 6595,
+      "sha256": "c147538e218d39fc50a6b54cd3c14dc96ad32dfc4b824ab2720c45cddcec064d"
+    },
+    {
+      "path": "Sources/README.md",
+      "bytes": 2875,
+      "sha256": "7c8da60dc8b2db47a614f69018ec5a7f6af966e5368d86d80d410ec8c8652a9b"
+    },
+    {
+      "path": "Sources/source-authority.yaml",
+      "bytes": 4464,
+      "sha256": "7a34b583852111f939f8491f5372e2a4da1d5ef1568eee5a3c9cfdeed9f22aed"
+    },
+    {
+      "path": "Sources/trusted-sources.yaml",
+      "bytes": 6907,
+      "sha256": "8a1db70050bb78f8469b4263932761d83f1c83aab63a1241c36ff2204d372e9b"
+    },
+    {
+      "path": "Tax/README.md",
+      "bytes": 3589,
+      "sha256": "b00f4951a7395250f6abe1e2539e66dd627c957f493d9dc74141e9d6eff1ff25"
+    },
+    {
+      "path": "plugin.json",
+      "bytes": 1443,
+      "sha256": "f714cd75815f3944476c2e7dfa2e1ca34eb6f6e16b65b8545d64963391743def"
+    },
+    {
+      "path": "skills/README.md",
+      "bytes": 8979,
+      "sha256": "35687b7e8917bf11174000c81b832df77f9f9b97f00853ed825be9f63ee757ff"
+    },
+    {
+      "path": "skills/acquisition-price-assessment/SKILL.md",
+      "bytes": 5353,
+      "sha256": "ca7a32b00b1022bc879f905d1afb9121c0329cbdb42d0e0bd7f0e183c8f9510f"
+    },
+    {
+      "path": "skills/client-profile-onboarding/SKILL.md",
+      "bytes": 4713,
+      "sha256": "b037b15e42f8a41712d63793579b38c7d5181fad6b4ddb1f41ecd267be96f5cb"
+    },
+    {
+      "path": "skills/html-report-renderer/SKILL.md",
+      "bytes": 6426,
+      "sha256": "57e7bd0f0d36ec598e56f4fd6e64951852dd11bab475c1a5b8819ce6f185491e"
+    },
+    {
+      "path": "skills/html-report-renderer/scripts/render-charts.mjs",
+      "bytes": 19343,
+      "sha256": "da653d1a2883e5070e1419c5788057231fe5852b4636114c793fecdcc1e765f5"
+    },
+    {
+      "path": "skills/income-investment/SKILL.md",
+      "bytes": 6245,
+      "sha256": "e37061a5f98166c18df1407d650c1bf97b526a3566bc489245941295842157bd"
+    },
+    {
+      "path": "skills/iris/SKILL.md",
+      "bytes": 3242,
+      "sha256": "a6acf7ab8518158bc4886973452b00f3384f3bf362d9138839b95f978030e799"
+    },
+    {
+      "path": "skills/owner-occupier-acquisition/SKILL.md",
+      "bytes": 5214,
+      "sha256": "39bf07c0de5941458fd1d4ca74a8d980ec93f2d2464e7808353c343dce29429e"
+    },
+    {
+      "path": "skills/planning-development-analysis/SKILL.md",
+      "bytes": 1812,
+      "sha256": "6d1e67b4fe0f54e4e41669d50209a1aa071b59d5721e0f2d29e52bbfb9b03c9a"
+    },
+    {
+      "path": "skills/policy-impact-analysis/SKILL.md",
+      "bytes": 1588,
+      "sha256": "eb7c55e42fd9f265fe9f6183fcb39d028a71e38b74ead0e3c0fee2cb33bb13b9"
+    },
+    {
+      "path": "skills/property-development-orchestrator/SKILL.md",
+      "bytes": 12185,
+      "sha256": "67eb4d70bd3dea3b98688414ade487dd38fd6e04f88a569f6e11b747878d565f"
+    },
+    {
+      "path": "skills/property-due-diligence/SKILL.md",
+      "bytes": 1603,
+      "sha256": "c2bd55cf628e58b70b02d97e2659f89e72c91e52dd458e15f9ec0d311436ae91"
+    },
+    {
+      "path": "skills/property-market-analysis/SKILL.md",
+      "bytes": 4270,
+      "sha256": "153a09f3868a316cc68533125f0ab08e0288b913a03f0f5b6bbb9a429e24b7f4"
+    },
+    {
+      "path": "skills/property-monitoring/SKILL.md",
+      "bytes": 1451,
+      "sha256": "ed4125991418ec791f03795eebb520c1987647adca783ecc3e22750df2dbbec6"
+    },
+    {
+      "path": "skills/property-research/SKILL.md",
+      "bytes": 4802,
+      "sha256": "c162aed43a595bb367614afd801d4f14ba447be94b3ff107c1f331e5b5a80ca2"
+    },
+    {
+      "path": "skills/property-strategy-assessment/SKILL.md",
+      "bytes": 2797,
+      "sha256": "c89e4283115f6468354fe0ba8c0a37ce35d87b68fc62a7bc37d81579ae089130"
+    },
+    {
+      "path": "skills/purchase-assistance-assessment/SKILL.md",
+      "bytes": 6000,
+      "sha256": "3abb4e2a4eb431e270fe8fb619b1bcc017024cf3858216e6a6de8627b67449dd"
+    },
+    {
+      "path": "skills/replacement-development/SKILL.md",
+      "bytes": 6662,
+      "sha256": "7ac20460d923106808f1f0c45d2515ae66a7e19b4139fa45ac532f970acd3790"
+    },
+    {
+      "path": "skills/strategy-comparison/SKILL.md",
+      "bytes": 4204,
+      "sha256": "f9bc6373b4f4b9597069d7937e6341828041b5297a76e7ff3d90534d4bd34553"
+    },
+    {
+      "path": "skills/subdivision-development/SKILL.md",
+      "bytes": 6986,
+      "sha256": "1b473eb4712033526040be03338f58f5142e54ccbe9c106d7b6be8539c41ddd8"
+    }
+  ],
+  "excluded": [
+    "credentials and private profiles",
+    "Console test runs and Skill unit tests",
+    "third-party dependency source"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "label": {
+    "en": "Iris Orange",
+    "zh": "Iris 橙白",
+    "zh-Hant": "Iris 橙白",
+    "ja": "Iris オレンジ"
+  },
+  "tokens": {
+    "common": {
+      "--radius": "12px",
+      "--shadow": "0 8px 24px rgba(40,45,50,0.06)",
+      "--bw": "1px",
+      "--head-font": "var(--font-sans)"
+    },
+    "light": {
+      "--bg": "#f5f6f7",
+      "--paper": "#ffffff",
+      "--ink": "#24272a",
+      "--ink-2": "#5f666c",
+      "--ink-3": "#858b91",
+      "--line": "#dfe2e5",
+      "--line-2": "#eceef0",
+      "--fill": "#fff7f2",
+      "--accent": "#c2410c",
+      "--accent-bg": "#fff0e6",
+      "--ok": "#21733a",
+      "--ok-bg": "#eaf6ed",
+      "--err": "#b42318",
+      "--err-bg": "#fdecea",
+      "--warn": "#914600",
+      "--warn-bg": "#fff3df",
+      "--head-bg": "#c2410c",
+      "--head-fg": "#ffffff"
+    },
+    "dark": {
+      "--bg": "#160c07",
+      "--paper": "#21120b",
+      "--ink": "#fff7ed",
+      "--ink-2": "#e6bfa3",
+      "--ink-3": "#bd8e70",
+      "--line": "#8a4624",
+      "--line-2": "#4f2917",
+      "--fill": "#30180d",
+      "--accent": "#ff9a55",
+      "--accent-bg": "#4a210d",
+      "--ok": "#7bd88f",
+      "--ok-bg": "#173321",
+      "--err": "#ff8b82",
+      "--err-bg": "#481b18",
+      "--warn": "#ffc66d",
+      "--warn-bg": "#41280b",
+      "--head-bg": "#ff9a55",
+      "--head-fg": "#2b1308"
+    }
+  }
+}
