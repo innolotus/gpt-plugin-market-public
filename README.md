@@ -13,18 +13,18 @@ instead of the Git-backed marketplace.
 
 ## Available plugins
 
-### Iris Console 0.1.2
+No plugins are currently listed in this marketplace.
 
-Iris Console provides evidence-aware Australian property research, acquisition,
-investment and development workflows through 18 coordinated Skills.
+## Iris Console has moved
+
+Iris Console 0.1.2 is now distributed through the
+[public marketplace](https://github.com/Lab-Cubes/labcubes-plugin-market/tree/main/plugins/iris-console).
+Register that marketplace and install from its identifier:
 
 ```bash
-codex plugin add iris-console@gpt-plugin-market-public
+codex plugin marketplace add Lab-Cubes/labcubes-plugin-market --ref main
+codex plugin add iris-console@labcubes-plugin-market
 ```
-
-The base plugin contains no credentials or private client profiles. Connected
-property-data providers and `grill-me` are optional enhancements rather than
-hard dependencies.
 
 ## Repository map
 
