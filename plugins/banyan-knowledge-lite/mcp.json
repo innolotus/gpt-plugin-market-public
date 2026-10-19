@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "banyan-knowledge-lite": {
+      "type": "streamable-http",
+      "url": "https://bk.ols01.starfield.com.au/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": { "mode": "cimd" },
+            "baseScopes": ["bk.memory.read", "bk.memory.write", "bk.project.write", "offline_access"],
+            "defaultScopes": []
+          }
+        }
+      }
+    }
+  }
+}

@@ -3,5 +3,18 @@
   "interface": {
     "displayName": "GPT Plugin Market Public"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "banyan-knowledge-lite",
+      "source": {
+        "source": "local",
+        "path": "./plugins/banyan-knowledge-lite"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
 }
