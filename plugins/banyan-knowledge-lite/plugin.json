@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "banyan-knowledge-lite",
+  "version": "0.1.3",
+  "description": "Project-scoped governed Claim workflows for Banyan Knowledge Lite. The bundled connection targets the InnoLotus OLS01 installation; configure a copy for your own BK.",
+  "author": { "name": "InnoLotus Software", "url": "https://github.com/innolotus" },
+  "homepage": "https://github.com/innolotus/gpt-plugin-market-public",
+  "repository": "https://github.com/innolotus/gpt-plugin-market-public",
+  "keywords": ["banyan", "knowledge", "claims", "mcp"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Banyan Knowledge Lite",
+        "shortDescription": "Governed knowledge for Agents",
+        "longDescription": "Connect to the InnoLotus OLS01 BK installation at bk.ols01.starfield.com.au, or generate a configured copy for your own installation before connecting. Includes setup, retrieval, authorized capture and two-phase governance skills. This package requests read, trusted Claim capture and Project creation, not proposal or governance authority. A separate BK account and OAuth consent are required. Skills do not grant permissions or override the Agent Host's approval policy.",
+        "developerName": "InnoLotus Software",
+        "category": "Productivity",
+        "brandColor": "#377A36",
+        "defaultPrompt": "Find relevant knowledge in my Banyan Knowledge Lite projects."
+      }
+    }
+  }
+}
